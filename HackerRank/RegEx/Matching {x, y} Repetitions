@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching {x, y} Repetitions
+# Found at https://www.hackerrank.com/challenges/matching-x-y-repetitions/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'^\d{1,2}[a-zA-Z]{3,}\.{,3}$'	

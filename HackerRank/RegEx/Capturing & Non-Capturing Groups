@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Capturing & Non-Capturing Groups
+# Found at https://www.hackerrank.com/challenges/capturing-non-capturing-groups/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'(ok){3,}'

@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Branch Reset Groups
+# Found at https://www.hackerrank.com/challenges/branch-reset-groups/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+$Regex_Pattern = '/^\d{2}(?|(-)|(:)|(---)|(\.))\d{2}\1\d{2}\1\d{2}$/';

@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching Anything But a Newline
+# Found at https://www.hackerrank.com/challenges/matching-anything-but-new-line/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r"^(.{3}\.){3}.{3}$"

@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Positive Lookbehind
+# Found at https://www.hackerrank.com/challenges/positive-lookbehind/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'(?<=[13579])\d'

@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching Specific String
+# Found at https://www.hackerrank.com/challenges/matching-specific-string/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+Regex_Pattern = r'hackerrank'

@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching Ending Items
+# Found at https://www.hackerrank.com/challenges/matching-ending-items/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'^[a-zA-Z]*s$'

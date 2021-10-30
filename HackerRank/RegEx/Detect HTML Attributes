@@ -1,0 +1,28 @@
+# Solution of Regex challenge on HackerRank
+# Detect HTML Attributes
+# Found at https://www.hackerrank.com/challenges/html-attributes/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import findall, match
+from collections import defaultdict
+
+tag = "<(\w+)"
+attr = "(?: (\w+)=)+"
+string = "<\w+[^>]{0,}>"
+line = ""
+
+for _ in range(int(input())):
+    line = line + input() + " "
+
+strings = list(findall(string, line))
+
+dic = defaultdict(set)
+for string in strings:
+    if match(tag, string).group(1) in dic:
+        for ele in findall(attr, string):
+            dic[match(tag, string).group(1)].append(ele)
+    else:
+        dic[match(tag, string).group(1)] = findall(attr, string)
+
+for key in sorted(dic):
+    print(key, ":", ",".join(sorted(set(dic[key]))), sep="")

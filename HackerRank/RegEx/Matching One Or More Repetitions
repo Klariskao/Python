@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching One Or More Repetitions
+# Found at https://www.hackerrank.com/challenges/matching-one-or-more-repititions/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'^\d+[A-Z]*[a-z]+$'

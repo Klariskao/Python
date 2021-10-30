@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching Zero Or More Repetitions
+# Found at https://www.hackerrank.com/challenges/matching-zero-or-more-repetitions/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'^\d{2,}[a-z]*[A-Z]*$'

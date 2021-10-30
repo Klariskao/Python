@@ -1,0 +1,13 @@
+# Solution of Regex challenge on HackerRank
+# Saying Hi
+# Found at https://www.hackerrank.com/challenges/saying-hi/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import match
+
+pattern = "^[Hh][Ii]\s[^Dd]"
+
+for _ in range(int(input())):
+    string = input()
+    if match(pattern, string):
+        print(string)

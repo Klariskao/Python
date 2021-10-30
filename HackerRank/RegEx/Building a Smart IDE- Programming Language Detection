@@ -1,0 +1,16 @@
+# Solution of Regex challenge on HackerRank
+# Building a Smart IDE: Programming Language Detection
+# Found at https://www.hackerrank.com/challenges/programming-language-detection/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from sys import stdin
+from re import search
+
+lines = stdin.read()
+
+if search("import java", lines):
+    print("Java")
+elif search("int main\(\)", lines):
+    print("C")
+else:
+    print("Python")

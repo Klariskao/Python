@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Positive Lookahead
+# Found at https://www.hackerrank.com/challenges/positive-lookahead/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'o(?=oo)'

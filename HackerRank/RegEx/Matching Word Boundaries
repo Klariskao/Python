@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching Word Boundaries
+# Found at https://www.hackerrank.com/challenges/matching-word-boundaries/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'\b[aeiouAEIOU][a-zA-Z]*\b'

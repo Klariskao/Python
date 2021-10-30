@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Negative Lookahead
+# Found at https://www.hackerrank.com/challenges/negative-lookahead/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'(.)(?!\1)'

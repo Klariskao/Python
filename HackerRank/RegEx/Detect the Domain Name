@@ -1,0 +1,15 @@
+# Solution of Regex challenge on HackerRank
+# Detect the Domain Name
+# Found at https://www.hackerrank.com/challenges/detect-the-domain-name/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import findall
+
+pattern = "(?:http[s]?:\/\/)(?:ww[w2]\.)?((?:[a-zA-Z0-9\-]+\.)+(?:[a-zA-Z\-])+)"
+lines = ''
+
+for _ in range(int(input())):
+    lines += input().strip()
+
+
+print(*sorted(set(findall(pattern, lines))), sep=";")

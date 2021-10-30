@@ -1,0 +1,15 @@
+# Solution of Regex challenge on HackerRank
+# HackerRank Tweets
+# Found at https://www.hackerrank.com/challenges/hackerrank-tweets/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import findall
+
+pattern = "(?i)[@# ]?hackerrank"
+
+line = ""
+
+for _ in range(int(input())):
+    line = line + input() + " "
+
+print(len(findall(pattern, line)))

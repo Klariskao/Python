@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Backreferences To Failed Groups
+# Found at https://www.hackerrank.com/challenges/backreferences-to-failed-groups/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'^(\d{2}(-?))(?:\d{2}\2){2}\d{2}$'

@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Forward References
+# Found at https://www.hackerrank.com/challenges/forward-references/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+$Regex_Pattern = '/^(\2tic|(tac))+$/';

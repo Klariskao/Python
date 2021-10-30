@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching Whitespace & Non-Whitespace Character
+# Found at https://www.hackerrank.com/challenges/matching-whitespace-non-whitespace-character/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r"(?:\S\S\s){2}\S\S"

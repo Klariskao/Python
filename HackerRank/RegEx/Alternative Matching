@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Alternative Matching
+# Found at https://www.hackerrank.com/challenges/alternative-matching/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'^(Mrs?|Ms|Dr|Er)\.[a-zA-Z]+$'

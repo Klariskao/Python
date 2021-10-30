@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching Digits & Non-Digit Characters
+# Found at https://www.hackerrank.com/challenges/matching-digits-non-digit-character/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r"(?:\d{2}\D){2}\d{4}"

@@ -1,0 +1,17 @@
+# Solution of Regex challenge on HackerRank
+# Find HackerRank
+# Found at https://www.hackerrank.com/challenges/find-hackerrank/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import search
+
+for _ in range(int(input())):
+    string = input()
+    if search(r"^hackerrank$", string):
+        print(0)
+    elif search(r"^hackerrank", string):
+        print(1)
+    elif search(r"hackerrank$", string):
+        print(2)
+    else:
+        print(-1)

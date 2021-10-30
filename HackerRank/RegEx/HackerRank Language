@@ -1,0 +1,11 @@
+# Solution of Regex challenge on HackerRank
+# HackerRank Language
+# Found at https://www.hackerrank.com/challenges/hackerrank-language/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import match
+
+pattern = "\d+ (?:C|CPP|JAVA|PYTHON|PERL|PHP|RUBY|CSHARP|HASKELL|CLOJURE|BASH|SCALA|ERLANG|CLISP|LUA|BRAINFUCK|JAVASCRIPT|GO|D|OCAML|R|PASCAL|SBCL|DART|GROOVY|OBJECTIVEC)$"
+
+for _ in range(int(input())):
+    print("VALID" if match(pattern, input()) else "INVALID")

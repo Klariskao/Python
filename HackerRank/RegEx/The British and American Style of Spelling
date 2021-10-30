@@ -1,0 +1,16 @@
+# Solution of Regex challenge on HackerRank
+# The British and American Style of Spelling
+# Found at https://www.hackerrank.com/challenges/uk-and-us/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import compile, findall
+
+string = ""
+
+for _ in range(int(input())):
+    string = string + input().strip() + " "
+
+for _ in range(int(input())):
+    word = input()
+    pattern = compile(word[:-2] + "(?:ze|se)")
+    print(len(findall(pattern, string)))

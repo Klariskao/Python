@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching Word & Non-Word Character
+# Found at https://www.hackerrank.com/challenges/matching-word-non-word/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r"\w{3}\W\w{10}\W\w{3}"

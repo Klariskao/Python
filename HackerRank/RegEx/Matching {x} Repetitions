@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching {x} Repetitions
+# Found at https://www.hackerrank.com/challenges/matching-x-repetitions/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'^[a-zA-Z02468]{40}[13579\t\r\n ]{5}$'	

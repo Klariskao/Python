@@ -1,0 +1,11 @@
+# Solution of Regex challenge on HackerRank
+# Detecting Valid Latitude and Longitude Pairs
+# Found at https://www.hackerrank.com/challenges/detecting-valid-latitude-and-longitude/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import match
+
+pattern = "\([+-]?(90(\.0+)?|[0-8]?\d(\.[\d]+)?), [+-]?(180(\.0+)?|1[0-7]\d(\.[\d]+)?|\d\d?(\.[\d]+)?)\)"
+
+for _ in range(int(input())):
+    print("Valid" if match(pattern, input()) else "Invalid")

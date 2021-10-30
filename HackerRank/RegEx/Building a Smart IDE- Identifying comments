@@ -1,0 +1,12 @@
+# Solution of Regex challenge on HackerRank
+# Building a Smart IDE: Identifying comments
+# Found at https://www.hackerrank.com/challenges/ide-identifying-comments/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re
+import sys
+
+pat = r'(/\*.*?\*/|//.*?$)'
+txt = sys.stdin.read()
+
+print("\n".join(re.sub('\n\s+', '\n', comment) for comment in re.findall(pat, txt, re.DOTALL|re.MULTILINE)))

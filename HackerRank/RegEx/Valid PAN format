@@ -1,0 +1,11 @@
+# Solution of Regex challenge on HackerRank
+# Valid PAN format
+# Found at https://www.hackerrank.com/challenges/valid-pan-format/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import match
+
+pattern = "[A-Z]{5}\d{4}[A-Z]$"
+
+for _ in range(int(input())):
+    print("YES" if match(pattern, input()) else "NO")

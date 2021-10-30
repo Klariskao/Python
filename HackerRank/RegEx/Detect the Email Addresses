@@ -1,0 +1,12 @@
+# Solution of Regex challenge on HackerRank
+# Detect the Email Addresses
+# Found at https://www.hackerrank.com/challenges/detect-the-email-addresses/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re, sys
+
+p=sys.stdin.read()
+pat='[\w\.]+@(?:\w+\.)+\w+'
+emaillist=re.findall(pat,p)
+
+print(';'.join(sorted(list(set(emaillist)))))

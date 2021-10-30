@@ -1,0 +1,16 @@
+# Solution of Regex challenge on HackerRank
+# Detect HTML Tags
+# Found at https://www.hackerrank.com/challenges/detect-html-tags/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import findall
+
+pattern = "<(\w+)"
+line = ""
+
+for _ in range(int(input())):
+    line = line + input() + " "
+
+list = set(findall(pattern, line))
+
+print(*[ele for ele in sorted(list)], sep=";")

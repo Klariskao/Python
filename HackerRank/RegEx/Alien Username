@@ -1,0 +1,11 @@
+# Solution of Regex challenge on HackerRank
+# Alien Username
+# Found at https://www.hackerrank.com/challenges/alien-username/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import match
+
+pattern = "^[_.]\d+[a-zA-Z]{0,}_?$"
+
+for _ in range(int(input())):
+    print("VALID" if match(pattern, input()) else "INVALID")

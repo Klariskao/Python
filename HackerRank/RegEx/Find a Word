@@ -1,0 +1,15 @@
+# Solution of Regex challenge on HackerRank
+# Find a Word
+# Found at https://www.hackerrank.com/challenges/find-a-word/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re
+
+string = ''
+
+for _ in range(int(input())):
+    string += input() + '\n'
+
+for _ in range(int(input())):
+    wrd = input()
+    print(len(re.findall(rf'\b{wrd}\b', string)))

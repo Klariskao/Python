@@ -1,0 +1,6 @@
+# Solution of Regex challenge on HackerRank
+# Matching Character Ranges
+# Found at https://www.hackerrank.com/challenges/matching-range-of-characters/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r'^[a-z][1-9][^a-z][^A-Z][A-Z]'	

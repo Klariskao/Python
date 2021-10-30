@@ -1,0 +1,18 @@
+# Solution of Regex challenge on HackerRank
+# Build a Stack Exchange Scraper
+# Found at https://www.hackerrank.com/challenges/stack-exchange-scraper/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import findall
+import sys
+
+identif = "(?<=id=\"question-summary-)\d+"
+question = "(?<=class=\"question-hyperlink\">).+(?=<\/a>)"
+time = "(?<=\" class=\"relativetime\">).+(?=<\/span>)"
+
+lines = sys.stdin.read()
+
+for i in range(len(findall(identif, lines))):
+    print(findall(identif, lines)[i], end=";")
+    print(findall(question, lines)[i], end=";")
+    print(findall(time, lines)[i])

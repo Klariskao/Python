@@ -1,0 +1,14 @@
+# Solution of Regex challenge on HackerRank
+# Find A Sub-Word
+# Found at https://www.hackerrank.com/challenges/find-substring/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import findall, compile
+
+teststring = ""
+for _ in range(int(input())):
+    teststring = teststring + input().strip() + " "
+
+for _ in range(int(input())):
+    pattern = compile("(?<=\w)" + input().strip() + "(?=\w)")
+    print(len(findall(pattern, teststring)))
