@@ -1,0 +1,8 @@
+# Solution of Python challenge on HackerRank
+# Check Strict Superset
+# Found at https://www.hackerrank.com/challenges/py-check-strict-superset/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+a = set(input().split())
+
+print(all(a > set(input().split()) for _ in range(int(input()))))

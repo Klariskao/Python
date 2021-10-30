@@ -1,0 +1,16 @@
+# Solution of Python challenge on HackerRank
+# Find Angle MBC
+# Found at https://www.hackerrank.com/challenges/find-angle/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from math import asin, acos, degrees, cos
+
+ab = int(input())
+bc = int(input())
+
+ac = (bc ** 2 + ab ** 2) ** 0.5
+bca = asin(ab/ac)
+bm = (bc**2 + (ac/2)**2 - 2*bc*(ac/2)*cos(bca))**0.5
+mbc = acos((bm**2 + bc**2 - (ac/2)**2) / (2 * bm * bc))
+
+print(round(degrees(mbc)), '°', sep='')

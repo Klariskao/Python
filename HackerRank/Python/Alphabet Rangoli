@@ -1,0 +1,10 @@
+# Solution of Python challenge on HackerRank
+# Alphabet Rangoli
+# Found at https://www.hackerrank.com/challenges/alphabet-rangoli/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def print_rangoli(size):
+    letters = "abcdefghijklmnopqrstuvwxyz"[:n]
+    for i in range(n-1, -n, -1):
+        j = abs(i)
+        print('-'.join(letters[n:j:-1]+letters[j:n]).center(4*n-3, '-'))

@@ -1,0 +1,7 @@
+# Solution of Python challenge on HackerRank
+# Arrays
+# Found at https://www.hackerrank.com/challenges/np-arrays/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def arrays(arr):
+    return (numpy.array(list(reversed(arr)), float))

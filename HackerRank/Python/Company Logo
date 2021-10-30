@@ -1,0 +1,8 @@
+# Solution of Python challenge on HackerRank
+# Company Logo
+# Found at https://www.hackerrank.com/challenges/most-commons/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from collections import Counter
+for i in Counter(sorted(input())).most_common(3):
+    print(*i)

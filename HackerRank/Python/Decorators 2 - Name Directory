@@ -1,0 +1,12 @@
+# Solution of Python challenge on HackerRank
+# Decorators 2 - Name Directory
+# Found at https://www.hackerrank.com/challenges/decorators-2-name-directory/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from operator import itemgetter
+from itertools import groupby
+
+def person_lister(f):
+    def inner(people):
+        return map(f, sorted(people, key=lambda x: int(x[2])))
+    return inner

@@ -1,0 +1,17 @@
+# Solution of Python challenge on HackerRank
+# itertools.product()
+# Found at https://www.hackerrank.com/challenges/collections-counter/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from collections import Counter
+
+n = input()
+sizes = Counter(list(map(int, input().strip().split())))
+profit = 0
+
+for _ in range(int(input())):
+    size, price = (map(int, input().strip().split()))
+    if sizes[size] > 0:
+        profit += price
+        sizes[size] = sizes.get(size, 0) - 1
+print(profit)

@@ -1,0 +1,11 @@
+# Solution of Python challenge on HackerRank
+# Collections.namedtuple()
+# Found at https://www.hackerrank.com/challenges/py-collections-namedtuple/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import collections, statistics
+print('%.2f' % statistics.mean(next((int(student(*row).MARKS) 
+
+for row in (input().split() for i in range(size))) 
+for size, student in [[int(input()), 
+   collections.namedtuple('Student', input())]])))

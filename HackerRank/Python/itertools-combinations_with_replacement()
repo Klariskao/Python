@@ -1,0 +1,9 @@
+# Solution of Python challenge on HackerRank
+# itertools.combinations_with_replacement()
+# Found at https://www.hackerrank.com/challenges/itertools-combinations-with-replacement/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from itertools import combinations_with_replacement
+
+string, k = input().split()
+print(*[''.join(item) for item in combinations_with_replacement(sorted(string), int(k))], sep="\n")

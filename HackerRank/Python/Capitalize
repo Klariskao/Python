@@ -1,0 +1,9 @@
+# Solution of Python challenge on HackerRank
+# Capitalize!
+# Found at https://www.hackerrank.com/challenges/capitalize/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def solve(s):
+    s  = s.split(' ')
+    s = [word.capitalize() for word in s]
+    return (' '.join(s))

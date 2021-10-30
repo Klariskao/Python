@@ -1,0 +1,19 @@
+# Solution of Python challenge on HackerRank
+# DefaultDict Tutorial
+# Found at https://www.hackerrank.com/challenges/defaultdict-tutorial/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from collections import defaultdict
+
+n, m = map(int, input().split())
+lists = defaultdict(list)
+
+for i in range(n):
+    lists[input()].append(i+1)
+
+for _ in range(m):
+    x = input()
+    if x in lists:
+        print(*lists[x])
+    else:
+        print('-1')

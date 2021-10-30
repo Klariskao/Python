@@ -1,0 +1,12 @@
+# Solution of Python challenge on HackerRank
+# Floor, Ceil and Rint
+# Found at https://www.hackerrank.com/challenges/floor-ceil-and-rint/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import numpy
+
+numpy.set_printoptions(legacy='1.13')
+
+A = numpy.array(input().split(), float)
+
+print(numpy.floor(A), numpy.ceil(A), numpy.rint(A), sep='\n')

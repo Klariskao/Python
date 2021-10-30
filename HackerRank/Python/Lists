@@ -1,0 +1,24 @@
+# Solution of Python challenge on HackerRank
+# Lists
+# Found at https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+if __name__ == '__main__':
+    N = int(input())
+    our_list = []
+
+    for _ in range(N):
+        our_input = (input().split())
+        #print(our_input)
+        command = our_input[0]
+        index_and_value = our_input[1:]
+        #print(command, "plus", index_and_value)
+
+        if command != "print":
+            command = command + "(" + "," .join(index_and_value) + ")"
+            #print(command)
+            eval("our_list."+command)
+            #print(our_list)
+
+        else:
+            print(our_list)

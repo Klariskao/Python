@@ -1,0 +1,13 @@
+# Solution of Python challenge on HackerRank
+# itertools.product()
+# Found at https://www.hackerrank.com/challenges/itertools-product/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from itertools import product
+
+A = [int(item) for item in input().split()]
+B = [int(item) for item in input().split()]
+
+AxB = list(product(A,B))
+
+print(*AxB)

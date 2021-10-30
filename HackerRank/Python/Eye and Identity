@@ -1,0 +1,10 @@
+# Solution of Python challenge on HackerRank
+# Eye and Identity
+# Found at https://www.hackerrank.com/challenges/np-eye-and-identity/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from numpy import eye
+
+n, m = map(int, input().split())
+
+print(str(eye(n, m)).replace('1',' 1').replace('0',' 0'))

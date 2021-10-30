@@ -1,0 +1,14 @@
+# Solution of Python challenge on HackerRank
+# Collections.OrderedDict()
+# Found at https://www.hackerrank.com/challenges/py-collections-ordereddict/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from collections import OrderedDict
+
+n = int(input())
+items = OrderedDict()
+
+for _ in range(n):
+    item, space, price = input().rpartition(' ')
+    items[item] = items.get(item, 0) + int(price)
+[print(*item) for item in items.items()]

@@ -1,0 +1,8 @@
+# Solution of Python challenge on HackerRank
+# Group(), Groups() & Groupdict()
+# Found at https://www.hackerrank.com/challenges/re-group-groups/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re
+m = re.search(r'([a-zA-Z0-9])\1+', input().strip())
+print(m.group(1) if m else -1)

@@ -1,0 +1,12 @@
+# Solution of Python challenge on HackerRank
+# Collections.deque()
+# Found at https://www.hackerrank.com/challenges/py-collections-deque/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from collections import deque
+d = deque()
+commands = {'append': d.append, 'pop': d.pop, 'popleft': d.popleft, 'appendleft': d.appendleft}
+for _ in range(int(input())):
+    c = input().split()
+    commands[c[0]](c[1]) if len(c) > 1 else commands[c[0]]()
+print(*d)

@@ -1,0 +1,12 @@
+# Solution of Python challenge on HackerRank
+# Designer Door Mat
+# Found at https://www.hackerrank.com/challenges/designer-door-mat/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+height, width = map(int, input().split())
+
+for i in range(1, height, 2):
+    print((i * ".|.").center(width,'-'))
+print('WELCOME'.center(width,'-'))
+for i in range(height-2, 0, -2):
+    print((i * ".|.").center(width,'-'))

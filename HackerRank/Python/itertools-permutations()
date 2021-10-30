@@ -1,0 +1,9 @@
+# Solution of Python challenge on HackerRank
+# itertools.permutations()
+# Found at https://www.hackerrank.com/challenges/itertools-permutations/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from itertools import permutations
+
+string, k = input().split()
+print(*[''.join(item) for item in permutations(sorted(string), int(k))], sep="\n")

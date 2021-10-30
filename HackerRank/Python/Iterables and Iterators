@@ -1,0 +1,17 @@
+# Solution of Python challenge on HackerRank
+# Iterables and Iterators
+# Found at https://www.hackerrank.com/challenges/iterables-and-iterators/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from itertools import combinations
+
+N = int(input())
+strings = [i for i in input().split()]
+K = int(input())
+count = 0
+
+for item in (combinations(strings, K)):
+    if 'a' in item:
+        count += 1
+
+print(count/len(list(combinations(strings, K))))

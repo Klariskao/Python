@@ -1,0 +1,14 @@
+# Solution of Python challenge on HackerRank
+# Athlete Sort
+# Found at https://www.hackerrank.com/challenges/python-sort-sort/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+n, m = map(int, input().split())
+
+arr = [list(map(int, input().split())) for _ in range(n)]
+
+k = int(input())
+
+arr = sorted(arr, key= lambda x: x[k])
+for a in arr:
+    print(*a)

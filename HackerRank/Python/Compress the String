@@ -1,0 +1,11 @@
+# Solution of Python challenge on HackerRank
+# Compress the String!
+# Found at https://www.hackerrank.com/challenges/compress-the-string/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from itertools import groupby
+
+strings = [list(g) for k, g in groupby(input())]
+
+for string in strings:
+    print("({1}, {0})".format(int(string[0]), len(string)), end=' ')

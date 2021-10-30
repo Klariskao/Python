@@ -1,0 +1,11 @@
+# Solution of Python challenge on HackerRank
+# Check Subset
+# Found at https://www.hackerrank.com/challenges/py-check-subset/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+for _ in range(int(input())):
+    input()
+    a = set(input().split())
+    input()
+    b = set(input().split())
+    print(bool(a.issubset(b)))

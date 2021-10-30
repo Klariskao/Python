@@ -1,0 +1,10 @@
+# Solution of Python challenge on HackerRank
+# Detect Floating Point Number
+# Found at https://www.hackerrank.com/challenges/introduction-to-regex/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+for _ in range(int(input())):
+    try:
+        print(bool(float(input())))
+    except ValueError:
+        print(False)

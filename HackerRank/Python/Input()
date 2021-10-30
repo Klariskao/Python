@@ -1,0 +1,8 @@
+# Solution of Python challenge on HackerRank
+# Input()
+# Found at https://www.hackerrank.com/challenges/input/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+x, k = map(int, input().split())
+
+print(bool(eval(input()) == k))

@@ -1,0 +1,13 @@
+# Solution of Python challenge on HackerRank
+# Incorrect Regex
+# Found at https://www.hackerrank.com/challenges/incorrect-regex/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re
+
+for _ in range(int(input())):
+    try:
+        re.match(input(), "whatever")
+        print("True")
+    except re.error:
+        print("False")
