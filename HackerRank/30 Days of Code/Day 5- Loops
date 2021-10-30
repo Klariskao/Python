@@ -1,0 +1,17 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 5: Loops
+# Found at https://www.hackerrank.com/challenges/30-loops/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(1, 11):
+        print(n, "x", i , "=", n*i)

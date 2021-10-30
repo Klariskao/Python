@@ -1,0 +1,24 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 20: Sorting
+# Found at https://www.hackerrank.com/challenges/30-sorting/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+n = int(input().strip())
+a = list(map(int, input().strip().split(' ')))
+
+swaps = 0
+unsorted = True
+
+while unsorted:
+    for x in range(len(a)-1):
+        if a == sorted(a):
+            unsorted = False
+            break
+        else:
+            if a[x]>a[x+1]:
+                a[x], a[x+1] = a[x+1], a[x]
+                swaps += 1
+
+print("Array is sorted in", swaps ,"swaps.")
+print("First Element:", a[0])
+print("Last Element:", a[len(a)-1])

@@ -1,0 +1,18 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 25: Running Time and Complexity
+# Found at https://www.hackerrank.com/challenges/30-running-time-and-complexity/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def isprime(n):
+    if n == 2:
+        return 'Prime'
+    if n == 1 or n % 2 == 0:
+        return 'Not prime'
+    for i in range(3, int(n**0.5) + 1, 2):
+        if n%i == 0:
+            return 'Not prime'
+    return 'Prime'
+
+
+for i in range(int(input())):
+    print(isprime(int(input())))

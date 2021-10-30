@@ -1,0 +1,20 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 18: Queues and Stacks
+# Found at https://www.hackerrank.com/challenges/30-queues-stacks/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from queue import LifoQueue
+from queue import Queue
+
+
+class Solution:
+    stack = LifoQueue()
+    queue = Queue()
+    def pushCharacter(self, s):
+        self.stack.put(s)
+    def popCharacter(self):
+        return self.stack.get()
+    def enqueueCharacter(self, s):
+        self.queue.put(s)
+    def dequeueCharacter(self):
+        return self.queue.get()

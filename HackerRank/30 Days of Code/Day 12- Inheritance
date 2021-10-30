@@ -1,0 +1,27 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 12: Inheritance
+# Found at https://www.hackerrank.com/challenges/30-inheritance/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+class Student(Person):
+
+    def __init__(self, firstName, lastName, idNum, scores):
+        self.firstName = firstName
+        self.lastName = lastName
+        self.idNumber = idNum
+        self.scores = scores
+
+    def calculate(self):
+        average = sum(scores)/len(scores)
+        if average >= 90:
+            return 'O'
+        if average >= 80:
+            return 'E'
+        if average >= 70:
+            return 'A'
+        if average >= 55:
+            return 'P'
+        if average >= 40:
+            return 'D'
+        if average < 40:
+            return 'T'

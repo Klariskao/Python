@@ -1,0 +1,12 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 19: Interfaces
+# Found at https://www.hackerrank.com/challenges/30-interfaces/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+class Calculator(AdvancedArithmetic):
+    def divisorSum(self, n):
+        total = 0
+        for i in range(1, n+1):
+            if n%i==0:
+                total+=i
+        return total

@@ -1,0 +1,17 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 9: Recursion 3
+# Found at https://www.hackerrank.com/challenges/30-recursion/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def factorial(n):
+    if n == 1:
+        return n
+    else:
+        return n * factorial(n - 1)
+
+
+if __name__ == '__main__':
+    n = int(input())
+    output = 0
+    result = factorial(n)
+    print(result)

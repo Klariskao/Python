@@ -1,0 +1,12 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 16: Exceptions - String to Integer
+# Found at https://www.hackerrank.com/challenges/30-exceptions-string-to-integer/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+S = input().strip()
+
+try:
+    int(S)
+    print(S)
+except:
+    print("Bad String")

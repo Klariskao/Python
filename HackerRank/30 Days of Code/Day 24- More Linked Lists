@@ -1,0 +1,13 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 24: More Linked Lists
+# Found at https://www.hackerrank.com/challenges/30-linked-list-deletion/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def removeDuplicates(self,head):
+        h = head
+        while head.next:
+            if head.data == head.next.data:
+                head.next = head.next.next
+            else:
+                head = head.next
+        return h

@@ -1,0 +1,17 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 8: Dictionaries and Maps
+# Found at https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import sys
+
+n = int(input())
+phone_book = dict(input().split() for i in range(0, n))
+lines = sys.stdin.readlines()
+
+for line in lines:
+    name = line.strip()
+    if name in phone_book:
+        print(name + "=" + phone_book[name])
+    else:
+        print("Not found")

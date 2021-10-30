@@ -1,0 +1,23 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 11: 2D Arrays
+# Found at https://www.hackerrank.com/challenges/30-2d-arrays/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+if __name__ == '__main__':
+    arr = []
+
+    for _ in range(6):
+        arr.append(list(map(int, input().rstrip().split())))
+
+    numbers = []
+
+    for j in range(0, 6):
+        for i in range(0, 4):
+            numbers.append(arr[j][i:i+3])
+
+    glasses = []
+
+    for i in range(0,16):
+        glasses.append(sum(numbers[i])+numbers[i+4][1]+sum(numbers[i+8]))
+
+    print(sorted(glasses)[15])

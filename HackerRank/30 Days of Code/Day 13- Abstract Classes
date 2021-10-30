@@ -1,0 +1,14 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 13: Abstract Classes
+# Found at https://www.hackerrank.com/challenges/30-abstract-classes/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+class MyBook (Book):
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
+    def display(self):
+        print("Title:", self.title)
+        print("Author:", self.author)
+        print("Price:", self.price)

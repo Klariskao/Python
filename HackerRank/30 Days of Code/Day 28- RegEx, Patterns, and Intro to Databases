@@ -1,0 +1,13 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 28: RegEx, Patterns, and Intro to Databases
+# Found at https://www.hackerrank.com/challenges/30-regex-patterns/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re
+
+matched = []
+for _ in range(int(input())):
+    name, email = input().split()
+    if re.search('@gmail.com$', email):
+        matched.append(name)
+print(*sorted(matched), sep = '\n')

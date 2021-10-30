@@ -1,0 +1,17 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 3: Intro to Conditional Statements
+# Found at https://www.hackerrank.com/challenges/30-conditional-statements/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import math
+import os
+import random
+import re
+import sys
+
+if __name__ == '__main__':
+    N = int(input())
+    if N % 2 != 0 or (N > 5 and N < 21):
+        print("Weird")
+    else:
+        print("Not Weird")

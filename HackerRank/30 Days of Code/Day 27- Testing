@@ -1,0 +1,30 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 27: Testing
+# Found at https://www.hackerrank.com/challenges/30-testing/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+class TestDataEmptyArray(object):
+    
+    @staticmethod
+    def get_array():
+        return []
+
+class TestDataUniqueValues(object):
+
+    @staticmethod
+    def get_array():
+        return [-100, 9, 0, 88, -23, 59, 7, 18]
+
+    @staticmethod
+    def get_expected_result():
+        return 0
+
+class TestDataExactlyTwoDifferentMinimums(object):
+
+    @staticmethod
+    def get_array():
+        return [66, 54, 0, -2, 120, -33, 7, 2, -33]
+
+    @staticmethod
+    def get_expected_result():
+        return 5

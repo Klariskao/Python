@@ -1,0 +1,15 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 6: Let's Review
+# Found at https://www.hackerrank.com/challenges/30-review-loop/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+tests = int(input())
+
+for i in range (0, tests):
+    case = input()
+    for j in range (0, len(case), 2):
+        print(case[j], end = "")
+    print(" ", end = "")
+    for k in range (1, len(case), 2):
+        print(case[k], end = "")
+    print("")

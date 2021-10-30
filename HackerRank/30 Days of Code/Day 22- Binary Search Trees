@@ -1,0 +1,10 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 22: Binary Search Trees
+# Found at https://www.hackerrank.com/challenges/30-binary-search-trees/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def getHeight(self, root):
+        if root == None:
+            return -1
+        else:
+            return 1 + max(self.getHeight(root.left), self.getHeight(root.right))

@@ -1,0 +1,8 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 14: Scope
+# Found at https://www.hackerrank.com/challenges/30-scope/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def computeDifference(self):
+        self.__elements = sorted(self.__elements)
+        self.maximumDifference = (self.__elements[len(self.__elements)-1]-self.__elements[0])

@@ -1,0 +1,15 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 15: Linked List
+# Found at https://www.hackerrank.com/challenges/30-linked-list/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def insert(self,head,data): 
+        temp = Node(data)
+        if head is None:
+            head = temp
+            return head
+        current = head
+        while current.next is not None:
+            current = current.next
+        current.next = temp
+        return head

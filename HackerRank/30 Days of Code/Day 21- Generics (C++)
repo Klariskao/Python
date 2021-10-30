@@ -1,0 +1,11 @@
+# Solution of 30 Days of Code challenge on HackerRank
+# Day 21: Generics
+# Found at https://www.hackerrank.com/challenges/30-generics/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+template<typename T>
+    void printArray(vector<T> elements){
+        for(unsigned int i = 0; i<elements.size(); i++){
+            cout << elements[i] << "\n";
+        }
+    }
