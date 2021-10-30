@@ -1,0 +1,15 @@
+// Solution of 10 Days of Statistics challenge on HackerRank
+// Day 5: Normal Distribution II
+// Found at https://www.hackerrank.com/challenges/s10-normal-distribution-2/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+from math import erf, sqrt
+m = 70
+o = 10
+
+def nor_di(x, m, o):
+    return 0.5 * (1 + erf((x - m) / (o * sqrt(2))))
+
+print(round(100 * (1 - nor_di(80, m, o)), 2))
+print(round(100 * (1 - nor_di(60, m, o)), 2))
+print(round(100 * (nor_di(60, m, o)), 2))

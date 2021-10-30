@@ -1,0 +1,16 @@
+// Solution of 10 Days of Statistics challenge on HackerRank
+// Day 5: Normal Distribution I
+// Found at https://www.hackerrank.com/challenges/s10-poisson-distribution-2/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+from math import erf, sqrt
+m = 20
+o = 2
+
+X = 19.5
+
+x1 = 20
+x2 = 22
+
+print(round(0.5 * (1 + erf((X - m) / (o * sqrt(2)))), 3))
+print(round((0.5 * (1 + erf((x2 - m) / (o * sqrt(2))))) - (0.5 * (1 + erf((x1 - m) / (o * sqrt(2))))), 3))

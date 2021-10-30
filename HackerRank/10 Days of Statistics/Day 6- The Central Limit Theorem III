@@ -1,0 +1,13 @@
+// Solution of 10 Days of Statistics challenge on HackerRank
+// Day 6: The Central Limit Theorem III
+// Found at https://www.hackerrank.com/challenges/s10-the-central-limit-theorem-3/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+X = 0.95
+n = 100
+m = 500
+o = 80
+z = 1.96
+
+print(round(m - (o / (n ** 0.5)) * z, 2))
+print(round(m + (o / (n ** 0.5)) * z, 2))

@@ -1,0 +1,12 @@
+// Solution of 10 Days of Statistics challenge on HackerRank
+// Day 5: Poisson Distribution I
+// Found at https://www.hackerrank.com/challenges/s10-poisson-distribution-1/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+from math import factorial
+
+k = 5
+lam = 2.5
+e = 2.71828
+
+print(round(((lam ** k) * (e **(-lam))) / factorial(k), 3))

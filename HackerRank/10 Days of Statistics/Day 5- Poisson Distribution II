@@ -1,0 +1,13 @@
+// Solution of 10 Days of Statistics challenge on HackerRank
+// Day 5: Poisson Distribution II
+// Found at https://www.hackerrank.com/challenges/s10-poisson-distribution-2/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+lam_a = 0.88
+lam_b = 1.55
+
+X = lam_a + lam_a ** 2
+Y = lam_b + lam_b ** 2
+
+print(round(160 + 40 * X, 3))
+print(round(128 + 40 * Y, 3))

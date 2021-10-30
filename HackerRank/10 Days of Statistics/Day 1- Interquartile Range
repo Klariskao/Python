@@ -1,0 +1,20 @@
+// Solution of 10 Days of Statistics challenge on HackerRank
+// Day 1: Interquartile Range
+// Found at https://www.hackerrank.com/challenges/s10-interquartile-range/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+import statistics
+
+n = int(input())
+elements, times = list(map(int, input().split())), list(map(int, input().split()))
+
+s = []
+for i in range(n):
+    s.extend([elements[i]] * times[i])
+s = sorted(s)
+mid = int(len(s) / 2)
+
+L = s[:mid] if n%2 == 0 else s[:mid]
+U = s[mid:] if n%2 == 0 else s[mid + 1:]
+
+print(round(float(statistics.median(U) - statistics.median(L)),1))

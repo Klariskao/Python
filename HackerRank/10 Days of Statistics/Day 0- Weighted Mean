@@ -1,0 +1,9 @@
+// Solution of 10 Days of Statistics challenge on HackerRank
+// Day 0: Weighted Mean
+// Found at https://www.hackerrank.com/challenges/s10-weighted-mean/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+n = int(input())
+a, b = list(map(int, input().split())), list(map(int, input().split()))
+
+print(round(sum(a[i] * b[i] for i in range(n))/sum(b),1))

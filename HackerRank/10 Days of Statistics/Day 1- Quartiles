@@ -1,0 +1,17 @@
+// Solution of 10 Days of Statistics challenge on HackerRank
+// Day 1: Quartiles
+// Found at https://www.hackerrank.com/challenges/s10-quartiles/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+from statistics import median
+
+n = int(input())
+nums = sorted(list(map(int, input().split())))
+mid = len(nums) // 2
+
+L = nums[:mid] if n%2 == 0 else nums[:mid]
+U = nums[mid:] if n%2 == 0 else nums[mid + 1:]
+
+print(int(median(L)))
+print(int(median(nums)))
+print(int(median(U)))

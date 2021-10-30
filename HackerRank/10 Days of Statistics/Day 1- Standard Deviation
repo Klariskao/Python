@@ -1,0 +1,11 @@
+// Solution of 10 Days of Statistics challenge on HackerRank
+// Day 1: Standard Deviation
+// Found at https://www.hackerrank.com/challenges/s10-standard-deviation/problem?isFullScreen=true
+// --------------------------------------------------------------
+
+from statistics import pstdev
+
+n = int(input())
+elements = list(map(int, input().split()))
+
+print(pstdev(elements))
