@@ -1,0 +1,7 @@
+# Solution of Python challenge on HackerRank
+# Merge the Tools!
+# Found at https://www.hackerrank.com/challenges/merge-the-tools/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def merge_the_tools(string, k):
+    [print("".join(dict.fromkeys(string[i:i+k]))) for i in range(0,len(string),k)]

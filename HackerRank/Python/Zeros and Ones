@@ -1,0 +1,11 @@
+# Solution of Python challenge on HackerRank
+# Zeros and Ones
+# Found at https://www.hackerrank.com/challenges/np-zeros-and-ones/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import numpy
+
+inputted = list(map(int, input().strip().split()))
+
+print(numpy.zeros(inputted, dtype = numpy.int))
+print(numpy.ones(inputted, dtype = numpy.int))

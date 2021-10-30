@@ -1,0 +1,16 @@
+# Solution of Python challenge on HackerRank
+# Re.start() & Re.end()
+# Found at https://www.hackerrank.com/challenges/re-start-re-end/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re
+
+s, k = input(), input()
+
+pattern = re.compile(k)
+r = pattern.search(s)
+if not r: 
+    print((-1, -1))
+while r:
+    print((r.start(), r.end() - 1))
+    r = pattern.search(s,r.start() + 1)

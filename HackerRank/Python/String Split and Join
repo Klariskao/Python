@@ -1,0 +1,11 @@
+# Solution of Python challenge on HackerRank
+# String Split and Join
+# Found at https://www.hackerrank.com/challenges/python-string-split-and-join/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def split_and_join(line):
+    split = line.split(" ")
+    #print(split)
+    join = "-".join(split)
+    #print(join)
+    return join

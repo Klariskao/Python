@@ -1,0 +1,17 @@
+# Solution of Python challenge on HackerRank
+# Matrix Script
+# Found at https://www.hackerrank.com/challenges/matrix-script/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from re import sub
+
+rows, colums = map(int, input().split())
+matrix = [input() for _ in range(rows)]
+matrix_string = []
+
+for j in range(colums):
+    matrix_string += [matrix[i][j] for i in range(rows)]
+
+matrix_string = ''.join(matrix_string)
+
+print(sub(r"(?<=[A-Za-z0-9])([!@#$%& ]+)(?=[A-Za-z0-9])", ' ', matrix_string))

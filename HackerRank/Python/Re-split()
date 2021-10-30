@@ -1,0 +1,6 @@
+# Solution of Python challenge on HackerRank
+# Re.split()
+# Found at https://www.hackerrank.com/challenges/re-split/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+regex_pattern = r"\.|," # Do not delete 'r'.

@@ -1,0 +1,7 @@
+# Solution of Python challenge on HackerRank
+# Triangle Quest
+# Found at https://www.hackerrank.com/challenges/python-quest-1/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+for i in range(1,int(input())):
+    print((1111111111*i)//(10)**(10-i))

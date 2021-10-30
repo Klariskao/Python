@@ -1,0 +1,6 @@
+# Solution of Python challenge on HackerRank
+# Set .add()
+# Found at https://www.hackerrank.com/challenges/py-set-add/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+print(len({(input()) for _ in range(int(input()))}))

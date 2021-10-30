@@ -1,0 +1,10 @@
+# Solution of Python challenge on HackerRank
+# Word Order
+# Found at https://www.hackerrank.com/challenges/word-order/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from collections import Counter
+
+a = [input() for _ in range(int(input()))]
+print(len(set(a)))
+print(*Counter(a).values())

@@ -1,0 +1,10 @@
+# Solution of Python challenge on HackerRank
+# Re.findall() & Re.finditer()
+# Found at https://www.hackerrank.com/challenges/re-findall-re-finditer/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re
+c = '[qwrtypsdfghjklzxcvbnm]'
+v = '[aeiou]'
+m = re.findall(r'(?<=' + c +')(' + v + '{2,})' + c, input().strip(), re.I)
+print('\n'.join(m or ['-1']))

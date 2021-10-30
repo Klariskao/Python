@@ -1,0 +1,10 @@
+# Solution of Python challenge on HackerRank
+# Standardize Mobile Number Using Decorators
+# Found at https://www.hackerrank.com/challenges/standardize-mobile-number-using-decorators/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+def wrapper(f):
+    def fun(l):
+        new_l = [('+91 ' + number[-10:-5] + ' ' + number[-5:]) for number in l]
+        return f(new_l)
+    return fun

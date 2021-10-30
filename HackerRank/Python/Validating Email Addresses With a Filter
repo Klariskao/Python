@@ -1,0 +1,15 @@
+# Solution of Python challenge on HackerRank
+# Validating Email Addresses With a Filter
+# Found at https://www.hackerrank.com/challenges/validate-list-of-email-address-with-filter/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re
+
+def fun(s):
+    try:
+        username = s[:s.index('@')]
+        websitename = s[s.index('@') + 1:s.index('.')]
+        extension = s[s.index('.') + 1:len(s)]
+        return (len(username)>0 and bool(re.match("^[\w\d_-]*$", username))) and (websitename.isalnum()) and (len(extension) < 4)
+    except ValueError:
+        return False

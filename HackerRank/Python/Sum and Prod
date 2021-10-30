@@ -1,0 +1,12 @@
+# Solution of Python challenge on HackerRank
+# Sum and Prod
+# Found at https://www.hackerrank.com/challenges/np-sum-and-prod/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import numpy
+
+n, m = input().split()
+
+a = numpy.array([input().split() for _ in range(int(n))], int)
+
+print(numpy.prod(numpy.sum(a, axis=0)))

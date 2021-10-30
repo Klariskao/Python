@@ -1,0 +1,11 @@
+# Solution of Python challenge on HackerRank
+# Validating and Parsing Email Addresses
+# Found at https://www.hackerrank.com/challenges/validating-named-email-addresses/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re
+
+for _ in range(int(input())):
+    name, mail = input().split()
+    if re.match(r"<[A-Za-z][\w\.-]+@[A-Za-z]+\.[A-Za-z]{1,3}>", mail):
+        print(name, mail)

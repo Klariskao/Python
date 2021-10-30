@@ -1,0 +1,14 @@
+# Solution of Python challenge on HackerRank
+# Piling Up!
+# Found at https://www.hackerrank.com/challenges/piling-up/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+for _ in range(int(input())):
+    result = "No"
+    n = int(input())
+    numbers = [(int(item)) for item in input().split()]
+
+    index = numbers.index(min(numbers))
+    if (numbers[:index] == sorted(numbers[:index]) or numbers[:index] == sorted(numbers[:index], reverse=True)) and (numbers[index:] == sorted(numbers[index:]) or numbers[index:] == sorted(numbers[index:], reverse=True)):
+        result = "Yes"
+    print(result)

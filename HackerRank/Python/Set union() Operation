@@ -1,0 +1,11 @@
+# Solution of Python challenge on HackerRank
+# Set .union() Operation
+# Found at https://www.hackerrank.com/challenges/py-set-union/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+input()
+a = set(map(int, input().split()))
+input()
+b = set(map(int, input().split()))
+
+print(len(a|b))

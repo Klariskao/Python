@@ -1,0 +1,10 @@
+# Solution of Python challenge on HackerRank
+# Polynomials
+# Found at https://www.hackerrank.com/challenges/np-polynomials/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import numpy
+
+a = numpy.array(input().split(), float)
+
+print(numpy.polyval(a, int(input())))

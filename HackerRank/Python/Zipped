@@ -1,0 +1,9 @@
+# Solution of Python challenge on HackerRank
+# Zipped!
+# Found at https://www.hackerrank.com/challenges/zipped/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+n, x = map(int, input().split())
+
+a = [(map(float, input().split())) for _ in range(x)]
+print(*(sum(student)/x for student in zip(*a)), sep='\n')

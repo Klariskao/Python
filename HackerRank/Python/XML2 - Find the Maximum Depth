@@ -1,0 +1,13 @@
+# Solution of Python challenge on HackerRank
+# XML2 - Find the Maximum Depth
+# Found at https://www.hackerrank.com/challenges/xml2-find-the-maximum-depth/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+maxdepth = 0
+def depth(elem, level):
+    global maxdepth
+    level += 1
+    if level >= maxdepth:
+        maxdepth = level
+    for child in elem:
+        depth(child, level)

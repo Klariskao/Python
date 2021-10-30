@@ -1,0 +1,14 @@
+# Solution of Python challenge on HackerRank
+# Set Mutations
+# Found at https://www.hackerrank.com/challenges/py-set-mutations/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+input()
+a = set(map(int, input().split()))
+
+for _ in range(int(input())):
+    command, _ = input().split()
+    b = set(map(int, input().split()))
+    getattr(a, command)(b)
+
+print(sum(a))

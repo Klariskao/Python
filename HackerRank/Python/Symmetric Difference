@@ -1,0 +1,10 @@
+# Solution of Python challenge on HackerRank
+# Symmetric Difference
+# Found at https://www.hackerrank.com/challenges/symmetric-difference/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+n = input()
+a = set(map(int, input().split()))
+n = input()
+b = set(map(int, input().split()))
+print(*sorted((a.union(b)).difference(a.intersection(b))), sep='\n')

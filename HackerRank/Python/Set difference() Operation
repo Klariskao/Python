@@ -1,0 +1,11 @@
+# Solution of Python challenge on HackerRank
+# Set .difference() Operation
+# Found at https://www.hackerrank.com/challenges/py-set-difference-operation/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+input()
+a = input().split()
+input()
+b = input().split()
+
+print(len(set(a)-set(b)))

@@ -1,0 +1,9 @@
+# Solution of Python challenge on HackerRank
+# Validating phone numbers
+# Found at https://www.hackerrank.com/challenges/validating-the-phone-number/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+import re
+
+for _ in range(int(input())):
+    print("YES" if (re.match("[789]\d{9}$", input())) else "NO")

@@ -1,0 +1,12 @@
+# Solution of Python challenge on HackerRank
+# Transpose and Flatten
+# Found at https://www.hackerrank.com/challenges/np-transpose-and-flatten/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+from numpy import transpose, array
+
+rows, columns = map(int, input().split())
+arr = [list(map(int, input().split())) for _ in range(rows)]
+
+print(transpose(array(list(arr))))
+print(array(list(arr)).flatten())

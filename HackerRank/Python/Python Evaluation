@@ -1,0 +1,6 @@
+# Solution of Python challenge on HackerRank
+# Python Evaluation
+# Found at https://www.hackerrank.com/challenges/python-eval/problem?isFullScreen=true
+# --------------------------------------------------------------
+
+eval(input())
